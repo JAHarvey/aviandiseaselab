@@ -1,0 +1,57 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Friendly URLs: /research instead of /research.html
+[[redirects]]
+  from = "/research"
+  to = "/research.html"
+  status = 200
+
+[[redirects]]
+  from = "/team"
+  to = "/team.html"
+  status = 200
+
+[[redirects]]
+  from = "/publications"
+  to = "/publications.html"
+  status = 200
+
+[[redirects]]
+  from = "/news"
+  to = "/news.html"
+  status = 200
+
+[[redirects]]
+  from = "/outreach"
+  to = "/outreach.html"
+  status = 200
+
+[[redirects]]
+  from = "/press"
+  to = "/press.html"
+  status = 200
+
+[[redirects]]
+  from = "/join"
+  to = "/join.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
