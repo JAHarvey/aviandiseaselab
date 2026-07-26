@@ -8,16 +8,11 @@ Open `index.html` in a browser and it works.
 
 ## Deploying to Netlify
 
-**Option A — drag and drop (fastest).** Go to <https://app.netlify.com/drop> and drag this
-whole folder in. Done. To point `jharvey.netlify.app` at it, change the site name in
-Netlify → Site settings → Domain management.
 
-**Option B — connect GitHub (recommended long term).**
 
-1. Push this folder to a repo (e.g. replace the contents of `JAHarvey/research-group`).
-2. In Netlify: Add new site → Import an existing project → pick the repo.
-3. Build command: leave empty. Publish directory: `.` (already set in `netlify.toml`).
-4. Every push to `main` redeploys automatically.
+** Connected to  GitHub**
+
+-Every push to `main` redeploys automatically.
 
 The contact form uses **Netlify Forms** and starts working the moment the site is on
 Netlify — submissions appear under Forms in the Netlify dashboard. Turn on email
