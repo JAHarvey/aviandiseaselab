@@ -134,7 +134,9 @@
     list.forEach(function (p) {
       if (p.year !== currentYear) {
         currentYear = p.year;
-        html += '<h2 class="pub-year">' + currentYear + "</h2>";
+        /* year 9999 = manuscripts in preparation or in review */
+        html += '<h2 class="pub-year">' +
+          (currentYear >= 9000 ? "In preparation &amp; in review" : currentYear) + "</h2>";
       }
       var titleHtml = p.doi
         ? '<a href="https://doi.org/' + p.doi + '" target="_blank" rel="noopener">' + p.title + "</a>"

@@ -134,8 +134,12 @@ whatever topics you use, so you never touch the HTML.
 }
 ```
 
-Several older papers have `doi: ""` because the DOI wasn't verified — fill those in when
-convenient and the DOI links appear automatically.
+The list is transcribed from your CV (July 2026): 20 peer-reviewed papers plus two
+manuscripts in preparation/review. Every published paper has a working DOI link.
+
+Entries with `year: 9999` are grouped under an "In preparation & in review" heading at
+the top of the page. When one is accepted, change the year to the real one, add the
+journal details and DOI, and delete the `note` line.
 
 ### Team members
 
