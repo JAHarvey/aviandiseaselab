@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.aviandiseaselab.com/sitemap.xml
+Sitemap: https://aviandiseaselab.com/sitemap.xml

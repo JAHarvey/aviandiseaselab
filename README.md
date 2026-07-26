@@ -25,7 +25,7 @@ notifications there so you actually see them.
 
 ### Pointing aviandiseaselab.com at it
 
-The site is already configured for `https://www.aviandiseaselab.com` (canonical tags,
+The site is already configured for `https://aviandiseaselab.com` (canonical tags,
 sitemap, robots.txt, link previews).
 
 1. Netlify → your site → **Domain management** → **Add a domain** → `aviandiseaselab.com`.
@@ -33,10 +33,11 @@ sitemap, robots.txt, link previews).
    registrar to the four Netlify nameservers it shows you. Alternatively keep your
    registrar's DNS and add a `CNAME` for `www` → `<your-site>.netlify.app` plus an
    `ALIAS`/`ANAME` (or Netlify's load balancer A record) for the apex.
-3. Set `www.aviandiseaselab.com` as the **primary domain** so the apex redirects to it —
-   that's what the canonical tags expect. If you'd rather run the bare
-   `aviandiseaselab.com`, find-and-replace `https://www.aviandiseaselab.com` with
-   `https://aviandiseaselab.com` across the HTML files, `sitemap.xml`, and `robots.txt`.
+3. **`aviandiseaselab.com` (no www) is the primary domain**, and `www.aviandiseaselab.com`
+   redirects to it. The canonical tags, sitemap, and robots.txt all use the bare domain
+   to match. If you ever switch the primary to the `www` version in Netlify,
+   find-and-replace `https://aviandiseaselab.com` with `https://www.aviandiseaselab.com`
+   across the HTML files, `sitemap.xml`, and `robots.txt` so they stay in sync.
 4. Netlify provisions a free Let's Encrypt certificate automatically. Turn on
    **Force HTTPS** once it's issued.
 5. Keep `jharvey.netlify.app` alive as a redirect so old links and your CV keep working.
