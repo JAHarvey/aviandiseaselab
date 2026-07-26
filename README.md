@@ -46,9 +46,9 @@ DNS changes usually resolve within an hour, occasionally up to 24.
 
 ---
 
-## Adding your own content
+## Updating content
 
-### Photos (the biggest single upgrade)
+
 
 The site is built to be image-forward but ships with gradient placeholders so nothing
 looks broken. Drop in real photos and it transforms.
@@ -209,9 +209,8 @@ sitemap.xml         Update the URLs if you use a custom domain
 
 ## Things worth doing next
 
-- Add real photos (hero, research, headshots) — biggest visual payoff
-- Add `assets/files/Harvey_CV.pdf`
+
+- Update CV `assets/files/Harvey_CV.pdf`
 - Fill in missing DOIs in `assets/js/publications.js`
 - Replace the dashed placeholder blocks on `team.html` as people join
-- Add a Bluesky link in the footer if you want it alongside Google Scholar
-- Update `sitemap.xml` and the `og:image` paths if you move to a custom domain
+
